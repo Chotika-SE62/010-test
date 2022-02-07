@@ -16,6 +16,7 @@
 <body>
 
     <div class="container">
+    <a href="index.php" class="btn btn-primary mt-3">Back</a>
         <h1 class="mt-5">Infomation</h1>
         <hr>
         <table id="mytable" class="table table-bordered table-striped">
@@ -40,7 +41,7 @@
                     <tr>
                         <td><?php echo $row['km_id']; ?></td>
                         <td><?php echo $row['km_name']; ?></td>
-                        <td><?php echo $row['km_pic']; ?></td>
+                        <td><img src="<?php echo $row['km_pic']; ?>" class="card-img-top" style="width: 100px; height: 100px;" alt="..."></td>
                         <td><?php echo $row['km_group']; ?></td>
                     </tr>
 
